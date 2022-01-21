@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  teamK:
+    image: prestashop/prestashop
+    ports:
+      - 17571:80
+      - 17572:443
