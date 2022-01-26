@@ -1,7 +1,18 @@
-version: '3.7'
+version: '3'
 services:
   teamK:
     image: prestashop/prestashop
     ports:
-      - 17571:80
-      - 17572:443
+      - 17570:80
+      - 17571:443
+    environment:
+      DB_SERVER: actina15.maas
+      DB_USER: be175716
+      DB_PASSWD: qwe123
+      DB_NAME: BE_175716
+      PS_DOMAIN: localhost:17570
+      PS_DOMAIN_SSL: localhost:17571
+      PS_DEV_MODE: 0
+      PS_INSTALL_AUTO: 0
+    deploy:
+     replicas: 1
