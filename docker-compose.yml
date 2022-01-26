@@ -1,7 +1,7 @@
 version: '3'
 services:
   teamK:
-    image: prestashop/prestashop
+    image: dalabudda/prestashop
     ports:
       - 17570:80
       - 17571:443
